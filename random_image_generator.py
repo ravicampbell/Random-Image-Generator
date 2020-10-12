@@ -42,5 +42,7 @@ def request_values(api_key, n):
 def main():
     create_image(120)
     #create_image(2)
+    #create_image(4)
+	
 if __name__ == '__main__':
     main()
