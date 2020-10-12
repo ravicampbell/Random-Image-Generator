@@ -14,7 +14,7 @@ def create_image(n):
 	colors = [request_values(key, n*n) for key in KEYS]
 	for i in range(n):
 		for j in range(n):
-			res[i][j] = (colors[i+j][0], colors[i+j][1], colors[i+j][2])
+			res[i][j] = (colors[0][i+j], colors[1][i+j], colors[2][i+j])
 		
 	img = Image.fromarray(res, mode='RGB')
 	img.save('random.png')
